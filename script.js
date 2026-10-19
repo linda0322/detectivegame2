@@ -597,7 +597,6 @@ let currentQuestionFailed = false; // 追蹤當前題目是否曾經答錯
 
 // DOM 元素
 const scoreValEl = document.getElementById("score-val");
-const speakerNameEl = document.getElementById("speaker-name");
 const dialogueTextEl = document.getElementById("dialogue-text");
 const characterPortraitEl = document.getElementById("character-portrait");
 const charLabelEl = document.getElementById("char-label");
@@ -643,7 +642,6 @@ function renderStep() {
     characterPortraitEl.classList.add("hidden");
   }
 
-  speakerNameEl.textContent = step.speaker;
 
 if (step.type === "dialogue") {
     dialogueTextEl.textContent = step.text;
