@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>聖誕節謀殺案 The Christmas Tragedy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <header id="game-header">
+      <button id="profile-btn">📝 偵探記事簿</button>
+      <div id="score-box">分數：<span id="score-val">0</span> 分</div>
+    </header>
+
+    <main id="vn-screen">
+      <div id="character-container">
+        <div id="character-portrait" class="hidden">
+          <span id="char-label">角色</span>
+        </div>
+      </div>
+
+      <div id="scene-box">
+        <p id="dialogue-text">載入中……</p>
+      </div>
+
+      <div id="quiz-modal" class="hidden">
+        <h3 id="quiz-title">📝 鑑識挑戰</h3>
+        <p id="quiz-question">載入中...</p>
+        <div id="quiz-options" class="options-container"></div>
+        <p id="quiz-feedback" class="feedback-text"></p>
+      </div>
+    </main>
+
+    <footer id="controls">
+      <button id="next-btn">繼續 ▶</button>
+    </footer>
+  </div>
+
+  <div id="profile-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>偵探記事簿（線索與嫌疑人）</h2>
+      <ul id="clue-list">
+      </ul>
+      <button id="close-profile-btn" class="opt-btn">關閉</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
